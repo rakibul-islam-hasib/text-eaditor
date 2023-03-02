@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+
+<body class="w-[90%] mx-auto">
+<header>
+    <div class=" mt-9">
+        <h1 class="font-bold text-5xl text-center">Text Editor</h1>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="bg-[#94C4FE] px-20 py-7">
+            <div class="border-[3px] border-black">
+                <div class="flex border-b-[3px] mx-auto px-4 w-[95%] border-black mb-3 justify-around py-5">
+                    <div class="">
+                        <button id="bold-btn"><i class="fa-solid fa-bold ml-2"></i></button>
+                        <button id="italic-btn"><i class="fa-solid fa-italic ml-4"></i></button>
+                        <button id="underline-btn"><i class="fa-sharp fa-solid fa-underline ml-4"></i></button>
+                    </div>
+                    <div class="">
+                       <button id="align-left"> <i class="fa-solid fa-align-left "></i></button>
+                       <button id="align-center"><i class="fa-solid fa-align-center ml-4"></i></button>
+                       <button id="align-right"><i class="fa-solid fa-align-right ml-4"></i></button>
+                        <button id="align-justify"><i class="fa-solid fa-align-justify ml-4"></i></button>
+                    </div>
+                    <div class="">
+                        <input type="number" class="w-[35px] " name="" value="16" id="font-size">
+                        <button id="upper-case" class="font-bold ml-4 mr-4">aA</button>
+                        <input id="color-input" type="color" >
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <textarea id="main-textarea" class="h-[420px] resize-none rounded-lg pt-1 pl-1 mb-6 focus:outline-none w-[95%]"></textarea>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/working.js"></script>
+</body>
+
+</html>
